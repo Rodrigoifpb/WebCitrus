@@ -42,7 +42,7 @@ if(!isset($_SESSION['auth']) || $_SESSION['auth'] === false){
 
     <!-- Outer Row -->
     <div class="m-5 wellcome">
-      Choose a Mikrotik
+      Escolha o servidor
     </div>
     <div class="row justify-content-center">
         <div class="row">
