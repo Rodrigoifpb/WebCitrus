@@ -42,7 +42,7 @@ if(!isset($_SESSION['auth']) || $_SESSION['auth'] === false){
 
     <!-- Outer Row -->
     <div class="m-5 wellcome">
-      Escolha o servidor
+      Choose a Mikrotik
     </div>
     <div class="row justify-content-center">
         <div class="row">
@@ -72,7 +72,7 @@ if(!isset($_SESSION['auth']) || $_SESSION['auth'] === false){
                     <input type="password" name="key" id="key" class="form-control" placeholder="Key">
                   </div>
                   <div class="form-group col-md-1">
-                    <button class="btn bg-purple text-white">Add</button>
+                    <button class="btn bg-purple text-white" >Add</button>
                   </div>
                 </div>
               </form>
@@ -84,7 +84,6 @@ if(!isset($_SESSION['auth']) || $_SESSION['auth'] === false){
             <table class="table" id="iptable">
               <thead>
                 <tr>
-                  <th scope="col">ID</th>
                   <th scope="col">IP</th>
                   <th scope="col">USER</th>
                   <th scope="col">Remove</th>
