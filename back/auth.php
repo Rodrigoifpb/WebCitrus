@@ -5,7 +5,7 @@ $password = $_POST['password'] ?? null;
 
 if(authenticateFake($login, $password)){
   $_SESSION['auth'] = true;
-  header('Location: ../form.php');
+  header('Location: ../selection.php');
 } else {
   header('Location: ../login.php');
 }
