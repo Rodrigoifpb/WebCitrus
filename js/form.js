@@ -1,7 +1,11 @@
 const table = document.querySelector('#myTabConten')
-const ip = document.querySelector('#ip').value
-const user = document.querySelector('#user').value
-const key = document.querySelector('#key').value
+// const ip = document.querySelector('#ip').value
+// const user = document.querySelector('#user').value
+// const key = document.querySelector('#key').value
+const ip = "127.0.0.1"
+const user = "rodrigo"
+const key = "adminpsa"
+
 console.log(ip)
 console.log(user)
 console.log(key)
