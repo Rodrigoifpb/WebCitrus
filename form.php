@@ -33,66 +33,9 @@
 
   <div class="container">
 
-    <!-- Outer Row -->
-    <!-- <div class="row justify-content-center">
-
-      <div class="col-6">
-
-        <div class="card o-hidden border-0 shadow-lg my-5 bg-transparent">
-          <div class="card-body p-0">
-            <!-- Nested Row within Card Body 
-            <div class="row">
-              <div class="col">
-                <div class="p-5">
-                  <div class="text-center">
-                    <h1 class="font-weight-bold text-white mb-4">Welcome to Omnichanel</h1>
-                  </div>
-                  <ul class="nav nav-tabs" id="myTab" role="tablist">
-                  <li class="nav-item">
-                    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Profile</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Contact</a>
-                  </li>
-                </ul>
-                <div class="tab-content" id="myTabContent">
-                  <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-                  <form class="user" action="back/gera_script.php" method="post">
-                    <div class="form-group">
-                     Cliente Name: <input type="text" name="cliente" class="form-control form-control-user" id="exampleInput" placeholder="Client Name">
-                    </div>
-                    <div class="form-group">
-                     Redis Port: <input type="number" name="Redis_port" class="form-control form-control-user" id="exampleInput" placeholder="7000" min="7000" max="7005">
-                    </div>
-                    <div class="form-group">
-                    Http Port: <input type="number" name="http_port" class="form-control form-control-user" id="exampleInput" placeholder="8000" min="8000" max="8999">
-                    </div>
-                    <div class="form-group">
-                    Https Port: <input type="number" name="https_port" class="form-control form-control-user" id="exampleInput" placeholder="9000" min="9000" max="9999">
-                    </div>
-                    </div>
-                    <div class="form-group">
-                    </div>
-                    <input type="submit" class="btn bg-purple text-white btn-user btn-block" value="Submit">
-                    <hr>
-                  </form>
-                  </div>
-                  <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">...</div>
-                  <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">...</div>
-                </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-
-    </div> -->
-
+    <param id="ip" value="<?php echo $_POST['ip'] ?>"></param>
+    <param id="user" value="<?php echo $_POST['user'] ?>"></param>
+    <param id="key" value="<?php echo $_POST['key'] ?>"></param>
     <div class="row m-4 ">
 
           <div class="card text-center d-flex col p-0 shadow-sm">
@@ -100,11 +43,11 @@
               <ul class="nav nav-tabs card-header-tabs" id="myTab" role="tablist">
                 <li class="nav-item">
                   <a class="nav-link active" id="ether-tab" data-toggle="tab" href="#ether" role="tab"
-                    aria-controls="ether" aria-selected="true">Cadastro</a>
+                    aria-controls="ether" aria-selected="true">Serviços Utilizados</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" id="add-tab" data-toggle="tab" href="#add" role="tab" aria-controls="add"
-                    aria-selected="false">Visualizar</a>
+                    aria-selected="false">Cadastro</a>
                 </li>
               </ul>
             </div>
@@ -117,10 +60,8 @@
                   <table id="tabela-ether" class="table  ">
                     <thead>
                       <tr>
-                        <th scope="col">R/X</th>
-                        <th scope="col">Name</th>
-                        <th scope="col">Type</th>
-                        <th scope="col">Actual MTU</th>
+                        <th scope="col">Serviço</th>
+                        <th scope="col">Porta</th>
                       </tr>
                     </thead>
                     <tbody></tbody>
@@ -130,14 +71,14 @@
                 <div class="tab-pane fade" id="add" role="tabpanel" aria-labelledby="add-tab">
 
                   <div class=" m-3">
-                    <h3>New Interface</h3>
+                    <h3>Cadastro de Cliente</h3>
                     <hr>
 
                     <div>
                     
                     <form class="user" action="back/gera_script.php" method="post">
                     <div class="form-group">
-                     Cliente Name: <input type="text" name="cliente" class="form-control form-control-user" id="exampleInput" placeholder="Client Name">
+                     Nome do Cliente: <input type="text" name="cliente" class="form-control form-control-user" id="exampleInput" placeholder="Client Name">
                     </div>
                     <div class="form-group">
                      Redis Port: <input type="number" name="Redis_port" class="form-control form-control-user" id="exampleInput" placeholder="7000" min="7000" max="7005">

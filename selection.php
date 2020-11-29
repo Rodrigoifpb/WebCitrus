@@ -17,7 +17,7 @@ if(!isset($_SESSION['auth']) || $_SESSION['auth'] === false){
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Wellcome RouterOS Analiser - Login</title>
+  <title>Wellcome - Login</title>
 
   <!-- Custom fonts for this template-->
   <link
@@ -42,7 +42,7 @@ if(!isset($_SESSION['auth']) || $_SESSION['auth'] === false){
 
     <!-- Outer Row -->
     <div class="m-5 wellcome">
-      Choose a Mikrotik
+      Informe o Servidor
     </div>
     <div class="row justify-content-center">
         <div class="row">
@@ -60,7 +60,7 @@ if(!isset($_SESSION['auth']) || $_SESSION['auth'] === false){
           
           <div class="row">
             <div class="col">
-              <form action="" id="add-ip">
+              <form action="form.php" id="add-ip" method="post">
                 <div class="form-row">
                   <div class="form-group col-md-4">
                     <input type="text" name="ip" id="ip" class="form-control" placeholder="IP" autofocus>
@@ -72,14 +72,15 @@ if(!isset($_SESSION['auth']) || $_SESSION['auth'] === false){
                     <input type="password" name="key" id="key" class="form-control" placeholder="Key">
                   </div>
                   <div class="form-group col-md-1">
-                    <button class="btn bg-purple text-white" >Add</button>
+                  <input type="submit" class="btn bg-purple text-white" value="Ir">
+                    <!-- <button class="btn bg-purple text-white" >Add</button> -->
                   </div>
                 </div>
               </form>
             </div>
           </div>
 
-          <div class="tab-inter fade show text-align" id="inter" role="tabpanel" aria-labelledby="tab-inter">
+          <!-- <div class="tab-inter fade show text-align" id="inter" role="tabpanel" aria-labelledby="tab-inter">
 
             <table class="table" id="iptable">
               <thead>
@@ -95,7 +96,7 @@ if(!isset($_SESSION['auth']) || $_SESSION['auth'] === false){
           </div>
           <div class="tab-add fade" id="Adicionar" role="tabpanel" aria-labelledby="tab-add">
 
-          </div>
+          </div> -->
           
         </div>
         
