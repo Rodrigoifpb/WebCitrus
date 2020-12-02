@@ -33,7 +33,6 @@
 
   <div class="container">
   
-  <?php echo $_POST['ip'] ?>
     <param id="ip" value="<?php echo $_POST['ip'] ?>"></param>
     <param id="user" value="<?php echo $_POST['user'] ?>"></param>
     <param id="key" value="<?php echo $_POST['key'] ?>"></param>
